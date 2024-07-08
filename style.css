@@ -22,6 +22,9 @@ body{
     background-size: cover;
     color: rgba(255, 255, 255, .9);
     height: 200vh;
+    -webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;user-select:none;
 }
 
 
@@ -197,7 +200,7 @@ section{
     /* Section Education */
 
     .section.sec_education{
-        height: 100vh;
+        height: 110vh;
         background: url(edu_sec_vector.png)center left no-repeat;
         background-size: 700px;
         background-position: 20% 55%;
@@ -210,7 +213,7 @@ section{
         z-index: 3;
         position: absolute;
         right: 15%;
-        top: 30%;
+        top: 10%;
     }
     .section.sec_education .caption h2{
         font-size: 45px;
@@ -228,6 +231,19 @@ section{
         margin-left: 4.2em;
         text-shadow: 0 0 10px #000000c5;
     }
+
+    .section.sec_education .caption img{
+        width: 350px;
+        border-radius: 20px;
+        margin-top: 1em;
+        cursor: pointer;
+        transition: .3s;
+    }
+            .section.sec_education .caption img:hover
+            {
+                width: 600px;
+                box-shadow: 0 0 30px #ffffff92;
+            }
 
     .section.sec_education .caption ul li{
         margin: 0 1em;
@@ -255,7 +271,7 @@ section{
     .section.sec_experiences .content{
         position: absolute;
         left: 15%;
-        top: 30%;
+        top: 17%;
     }
     .section.sec_experiences .caption{
         width: 700px;
@@ -623,6 +639,7 @@ section{
             text-align: center;
             overflow-y: auto;
             margin-bottom: 1em;
+            height: 130vh;
         }
 
         .section.sec_education .caption{
@@ -630,8 +647,13 @@ section{
             height: auto;
             position: relative;
             right: 0;;
-            top: 0;
+            top: 0%;
         }
+
+            .section.sec_education .caption img:hover
+            {
+                width: 350px;
+            }
 
         .section.sec_education .caption h2{
             font-size: 30px;
